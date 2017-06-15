@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="latin1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Cerro Catedral, Bariloche. #CatedralInvierno." />
+    <meta name="keywords" content="Cerro Catedral, Bariloche, ski, snowboard, nieve, grastronomia, servicios, travesia, montaña, medios de elevaciion, tarifas, parque de nieve, trineos, donas" />
+    <meta name="author" content="Catedral Alta Patagonia">
+
+    <title>Catedral Alta Patagonia</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    
+    
+       <script src="js/jquery-1.9.1.min.js"></script>
+       
+    
+<!-- DO NOT MODIFY -->
+  
+
+
+    
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+	height: 100%;
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+      }
+     
+    </style>
+      
+    
+    
+    
+    
+    
+</head>
+
+<body id="body_home">
+
+
+
+
+<div class="contenedor">
+           
+<script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+
+   
+			 
+		
+			
+		  function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -41.1669616, lng: -71.4420796},
+          zoom: 16
+        });
+		
+	 	var elevator = new google.maps.ElevationService;
+        var infoWindow = new google.maps.InfoWindow({map: map});
+		
+		
+		window.onload = function(event) {
+          displayLocationElevation(event.latLng, elevator, infoWindow);
+        }
+		
+		
+		
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+             lng: position.coords.longitude
+
+
+            };
+			var latitud=position.coords.latitude;
+			var longitud=position.coords.longitude;
+  			latitud=parseFloat(Math.round(latitud * 100) / 100).toFixed(4); 
+			longitud=parseFloat(Math.round(longitud * 100) / 100).toFixed(4); 
+			
+			
+			document.getElementById('latitud').innerHTML = "Latitud "+latitud;
+			document.getElementById('longitud').innerHTML = "Longitud "+longitud;
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('TU POSICION');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+	  
+	  
+	  
+	 function displayLocationElevation(location, elevator, infowindow) {
+        // Initiate the location request
+        elevator.getElevationForLocations({
+          'locations': [location]
+        }, function(results, status) {
+          infowindow.setPosition(location);
+          if (status === 'OK') {
+            // Retrieve the first result
+            if (results[0]) {
+              // Open the infowindow indicating the elevation at the clicked position.
+            
+				  document.getElementById('altitud').innerHTML =results[0].elevation + ' meters.';
+            } else {
+              infowindow.setContent('No results found');
+            }
+          } else {
+            infowindow.setContent('Elevation service failed due to: ' + status);
+          }
+        });
+      }
+	  
+    </script>       
+       
+       
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUrmPTE7eRTQ2c0zJTnGbJJc65MlcF4ec&callback=initMap">
+    </script>             
+               <!-- Tabla Main Layout -->
+            
+<table width="100%" height="100%" border="0">
+
+  <tr>
+    <td height="22">&nbsp;</td>
+    <td id="latitud">&nbsp;</td>
+    <td width="30%" id="longitud">&nbsp;</td>
+    <td width="32%" id="altitud">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td height="484" colspan="5"><div id="map"></div> </td>
+  </tr>
+  <tr>
+    <td width="3%">&nbsp;</td>
+    <td width="31%"><div class="text_16" align="center"><a href="test.html">Velocidad</a></div></td>
+    <td colspan="2">&nbsp;</td>
+    <td width="4%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+   
+</table>
+
+
+<tr>
+<td  id="latitud" colspan="3">&nbsp;</td><td  id="longitud" colspan="3">&nbsp;</td></td>
+</tr>
+
+
+</body>
+</html>

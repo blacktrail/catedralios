@@ -1,0 +1,514 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+	/*padding-top: 125px;
+     Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.body_home{
+	  /*padding-top: -20px;
+   Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.creditos_pie_1{text-align:left;}
+.creditos_pie_2{text-align:right;}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 32px;
+    height: 32px;
+    padding-top: 1px;
+	padding-left:7px;
+	padding-right:7px;
+}
+
+.interior_titulos{
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	color:#8cc63e;
+	font-size:18px;
+	font-weight:600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.interior_contenido{
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight:400;
+	color: #000000;
+	text-decoration: none;
+	line-height:20px;
+	margin:auto;
+}
+
+
+li, p, span{
+	font-family:"Open Sans";
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:"Open Sans";
+	color:#00a7e4;
+}
+
+td, center{
+	font-family:"Open Sans";
+}
+
+label, button, input, select, textarea, label-primary{
+	font-family:"Open Sans";
+	font-weight:normal;
+}
+
+.txt_form_home {
+	color:#FFF;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.estilo_input{
+	font-family:"Open Sans";
+	font-weight:normal;
+}
+
+.destacado_home{
+	margin:auto;
+	max-width:718px;
+	width:100%;
+	background-color:#f5f8f9;
+	min-height:450px;
+	border-bottom:#f7a800 2px solid;
+}
+
+.destacado_home_titulo{
+	width:100%;
+	height:41px;
+	background-color:#f7a800;
+	text-indent:25px;
+	line-height:41px;
+	font-family:"Open Sans";
+	font-size:24px;
+	text-decoration: none;
+	color:#FFF;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.destacado_home_titulo_masinfo{
+	float:right;
+	background-image: url(../images/sep_mas_info_dest_home.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color:#eff2f3;
+	max-width:180px;
+	width:30%;
+	height:41px;
+	font-size:16px;
+	color:#FFF;
+	text-align:center;
+	cursor:pointer;
+}
+
+.destacado_home_texto_titulo{
+	font-family:"Open Sans";
+	font-size:16px;
+	font-weight:bold;
+	text-decoration: none;
+	color:#51575b;
+}
+
+.destacado_home_texto{
+	margin:auto;
+	margin-top:20px;
+	width:90%;
+	font-family:"Open Sans";
+	font-size:14px;
+	text-decoration: none;
+	color:#95a8b4;
+	vertical-align:middle;
+}
+
+.sombra_cuadro_01{
+	max-width:570px;
+	margin:auto;
+	text-align:center;
+}
+
+.sombra_cuadro_02{
+	max-width:400px;
+	text-align:center;
+}
+
+.pie{
+	width:100%;
+	min-height:140px;
+	background-color:#f3f3f3;
+}
+
+.pie_menu_texto, .pie_menu_texto a, .pie_menu_texto a:hover{
+	font-family:'Open Sans'; 
+	font-size:12px; 
+	line-height:24px; 
+	color:#000; 
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+.menu_inferior, .menu_inferior a, .menu_inferior a:hover{
+	font-family:"Open Sans";
+	font-size:14px;
+	line-height:60px;
+	text-decoration: none;
+	color:#FFF;
+	text-align:center;
+}
+
+.titulo_blanco{
+	font-family:"Open Sans";
+	font-size:24px;
+	line-height:35px;
+	text-decoration: none;
+	color:#FFF;
+		text-indent:10px;
+}
+
+
+
+
+.menu_inferior_separador{
+	height:5px;
+	border-bottom:#4ea671 solid 1px;
+}
+
+.menu_inferior_info{
+	margin-top:30px;
+	font-family:"Open Sans";
+	font-size:12px;
+	line-height:24px;
+	text-decoration: none;
+	color:#FFF;
+	text-align:center;
+}
+
+.paquete{
+	max-width:100%;
+	min-height:175px;
+	background-color:#f7a800;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	padding-top:5px;
+	padding-left:10px;
+}
+
+.paquete_titulo{
+	font-family:"Open Sans";
+	color:#FFF;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.paquete_resenia{
+	font-family:"Open Sans";
+	color:#FFF;
+	font-size:13px;
+	text-decoration:none;
+	line-height:18px;
+}
+
+.paquete_precio{
+	font-family:"Open Sans";
+	color:#FFF;
+	font-size:40px;
+	font-weight:bold;
+	text-decoration:none;
+	padding-top:10px;
+}
+
+.paquete_precio_nota{
+	font-family:"Open Sans";
+	color:#FFF;
+	font-size:12px;
+	font-style:italic;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.paquete_boton_compra{
+	margin-right:10px;
+	margin-top:17px;
+	float:right;
+	font-family:"Open Sans";
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	background-color:#0076bd;
+	line-height:28px;
+	
+	width:84px;
+	height:30px;
+	border:#FFF solid 1px;
+	margin-right:20px;
+	cursor:pointer;
+}
+
+.contenedor_programas_destacados{
+	width:100%;
+	min-height:400px;
+	overflow:hidden;	
+	background-color:#f5f8f9;
+	
+	/* Flexbox
+	display:flex;
+	flex-flow:column no-wrap;
+	justify-content: space-between; */
+}
+
+.programa_destacado{
+	min-width:359px;
+	margin-left: -14px;
+}
+.programa_destacado_titulo{
+	font-family:"Open Sans";
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#51575b;
+	line-height:30px;
+	padding-left:10px;
+	padding-top:5px;
+}
+
+.programa_destacado_resenia{
+	font-family:"Open Sans";
+	font-size:13px;
+	text-decoration:none;
+	color:#95a8b4;
+	min-height:100px;
+	padding:10px;
+	line-height:22px;
+}
+
+.programa_destacado_foto{
+	width:100%;
+}
+
+.titulo_destacado_home{
+	font-family:"Open Sans";
+	font-size:24px;
+	text-decoration:none;
+	color:#FFFFFF;
+	padding-left:10px;
+	line-height:40px;
+}
+
+.titulo_mas_programas{
+	font-family:"Open Sans";
+	font-size:16px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-right:10px;
+	line-height:40px;
+	cursor:pointer;
+}
+
+.programa_destacado_fecha_boton{
+	margin:auto;
+	width:100%;
+	/* Flexbox
+	display:flex;
+	flex-flow:column no-wrap;
+	justify-content: space-between; */
+}
+
+.programa_destacado_fecha{
+	padding-left:20px;
+}
+
+.programa_destacado_boton{
+	font-family:"Open Sans";
+	font-size:14px;
+	text-decoration:none;
+	color:#51575b;
+	line-height:35px;
+	text-align:center;
+	
+	width:160px;
+	height:35px;
+	border:#dcdfe0 solid 1px;
+	margin:auto;
+	/*margin-right:20px;*/
+	cursor:pointer;
+}
+
+.color_titulos_programas{
+	color:#2f306d;
+}
+
+.color_periodo_programas{
+	color:#f7a800;
+}
+
+.iso_wsa{min-height:30px; margin-top:10px; padding-left:10px; display:inline-block;}
+.sociales{min-height:30px; margin-top:25px; width:24%; display:inline-block; text-align:right; vertical-align:top}
+
+.banners_botones_big{display:none;}
+.banner_interior_xs{display:none;}
+
+/*.separador_actividades{display:block; padding-top:120px;}*/
+
+.cabezal_home{position:absolute; z-index:999; width:100%;}
+
+.banner_mapa_pistas_phone{display:none;}
+.placas_promos_home_phone{display:none;}
+.placas_promos_home_tablet{display:none;}
+
+.cmusica{padding-top:150px; padding-left:50px;}
+
+@media (max-width: 1199px) {
+
+	.navbar-brand,
+	.navbar-nav li a {
+		line-height: 50px;
+		height: 50px;
+		padding-top: 0;
+	}
+	.banners_botones_small{display:block;}
+	.banners_botones_big{display:none;}
+	.banner_interior_xs{display:none;}
+	.separador_banners{height:0px;}
+	
+	/*body{padding-top:200px;}*/
+}
+
+@media (max-width: 991px) {
+	/*	body {
+		padding-top: 225px;
+			Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.
+	}*/
+	.slide_home {display:none;}
+	.iso_wsa {display:none;}
+	.sociales{width:100%; display:block; text-align:center;}
+	.parte_diario{width:100%; text-align:center; margin-top:0px;}
+	.datos_pie{text-align:center;}
+	.creditos_pie_1{text-align:center;}
+	.creditos_pie_2{text-align:center;}
+	.texto_scroll{display:none;}
+	.banners_botones_big{display:block;}
+	.banners_botones_small{display:none;}
+	.banner_interior_xs{display:none;}
+	/*.body_home{padding-top:240px;}*/
+	.cabezal_home{position:relative;}
+	.placas_promos_home_tablet{display:inline-block;}
+}
+
+@media (max-width: 430px) {
+	.parte_diario{width:100%; text-align:center; margin-top:0px;}
+	.banners_botones_small{display:block;}
+	.banners_botones_big{display:none;}
+	.cmusica{padding-top:10px; padding-left:0px; margin-bottom:10px;}
+}
+
+
+@media (max-width: 550px) {
+	.banner_mapa_pistas_phone{display:inline-block;}
+	.placas_promos_home_phone{display:inline-block;}
+	.placas_promos_home_tablet{display:none;}
+	.banner_interior_lg{display:none;}
+	.banner_interior_xs{display:inline-block;}
+	.separador_banners{height:0px;}
+
+	/*.separador_actividades{display:block; padding-top:190px;}*/
+}
+
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+#footerfixed {
+	bottom: 0px;
+	margin: 0 auto !important;
+	text-align: center !important;
+	width: 100% !important;
+	height: 55px;
+	position: fixed;
+	left: 0px;
+}
+
+#headerfixed {
+	top: 0px;
+	margin: 0 auto !important;
+	text-align: center !important;
+	width: 100% !important;
+	height: 60px;
+	left: 0px;
+	background-color: rgba(51, 51, 51, 0.97);
+	 
+}

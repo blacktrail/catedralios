@@ -1,0 +1,385 @@
+/*
+ * Start Bootstrap - Logo Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+.white_gb  {
+	padding-top: 0px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	background-color: #FFF;
+	
+}
+
+
+.h1_cate {
+	font-family: Aller, "Aller Light";
+	color: #6ecff6;
+	font-weight: lighter;
+	font-size: 18px;
+}
+.digital_text_big{
+	font-family: "Digital-7", "Digital-7 Italic", "Digital-7 Mono";
+	color: #00FF00;
+	font-weight: bold;
+	font-size: 36px;
+	font-style: italic;
+}
+
+.digital_text_small{
+	font-family: "Digital-7", "Digital-7 Italic", "Digital-7 Mono";
+	color: #00FF00;
+	font-weight: bold;
+	font-size: 16px;
+	font-style: normal;
+}
+
+
+
+#body_home {
+	background-image: url(../img/home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0px;
+	height: 100%;
+	}
+
+.whitephp  {
+	padding-top: 0px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+	background-color: #FFF;
+	height: 100%;
+	
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+.latlng{
+	color: #fff;
+	
+}
+
+.but_catedral_blue{
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: "Open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+	font-weight: normal;
+	font-size: 14px;
+	width: 100%;
+}
+
+
+.camerabut{
+	border: 0px solid transparent;
+	border-radius: 0px;
+	font-family: "Open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+	font-weight: normal;
+	font-size: 14px;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+.cajacomentario {
+	border-radius: 12px 12px 12px 12px;
+	border-width: 2px;
+	border-color: #00aeef;
+	border-style: solid;
+	margin: 2px 5px;
+	padding: 5px;
+	display: block;
+	margin-bottom: 20px;
+	color: #00AEEF;
+	font-size: 10px;
+	font-family: Aller, "Aller Light";
+	text-align: center;
+}
+
+.altnieve{
+	font-size:12px
+}
+
+
+.text_altnieve{
+	font-size: 10px;
+	color: #00BDF2;
+	font-style: italic;
+}
+
+.text_16{
+	font-size: 16px;
+	color: #6ecff6;
+	font-family: Aller, "Aller Light";
+}
+
+
+.text_temperatura{
+	font-size: 56px;
+	color: #FFFFFF;
+	font-family: Aller, "Aller Light";
+}
+
+.contenedor {
+	width: 100%;
+	height: 100%;
+ 
+}
+  #map {
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	min-height: 400px;
+      }
+.tableheader{
+	top: 0px;
+	margin: 0 auto !important;
+	text-align: center !important;
+	width: 100% !important;
+	height: auto;
+	position: fixed;
+	background-image:url(../img/header.png)
+}
+ #photo{
+        display:none;
+        width:200px;
+        height:200px;
+    }
+ 
+    #sendPhoto{
+        display: none;
+    }
+	
+	
+	
+.text_alt_nieve {
+	color: #6ECFF6;
+	font-size: 10pt;
+	font-style: italic;
+	font-weight: normal;
+	font-family: "Open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+	
+	
+}
+
+.alt_nieve {
+	color: #FFFFFF;
+	font-family: "Open Sans", "Open Sans Extrabold", "Open Sans Light", "Open Sans Semibold";
+	font-weight: bold;
+	font-size: 16px;
+	
+	
+}
+#tempcum {
+	font-family: Aller, "Aller Light";
+	font-size: 36px;
+	color: #FFF;
+}
+
+#latitud {
+	font-family: Aller, "Aller Light";
+	font-size: 8px;
+	color: #0F0;
+}
+#longitud{
+	font-family: Aller, "Aller Light";
+	font-size: 8px;
+	color: #0F0;
+}
+#altitud{
+	font-family: Aller, "Aller Light";
+	font-size: 8px;
+	color: #0F0;
+}
+
+
+
+
+
+
+.placa {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 180;
+	right: 0;
+	background: url(../img/987_bkg.png) center no-repeat;
+	height: 265px;
+	width: 360px;
+	visibility: inherit;
+}
+
+@media screen and (max-width: 370px){
+	.placa {
+		width: 100%;
+		background-size: 150%;
+	}
+}
+
+.face {
+	margin: auto;
+	position: absolute;
+	top: 230; left: 40; bottom: 40; right: 0;
+	background: url(../img/fb.png) center no-repeat;
+	height: 40px;
+	width: 40px;
+}
+
+.tw {
+	margin: auto;
+	position: absolute;
+	top: 230; left: -80; bottom: 40; right: 0;
+	background: url(../img/tw.png) center no-repeat;
+	height: 40px;
+	width: 40px;
+}
+
+.disepro {
+	margin: auto;
+	position: absolute;
+	top: 340; left: 0; bottom: 0; right: 20;
+	background: url(../disepro.gif) center no-repeat;
+	height: 47px;
+	width: 140px;
+}
+
+.facelink { 
+		position: absolute; 
+		top: 250; left: 40; bottom: 0; right: 0;
+		background-color: transparent; 
+		border: 0px solid yellow; }
+
+.twlink { 
+		position: absolute; 
+		top: 250; left: -70; bottom: 0; right: 0;
+		background-color: transparent; 
+		border: 0px solid yellow; }
+
+/*----------------------------------------------
+---- AUDIO -------------------------------------
+----------------------------------------------*/
+
+.bt-audio {
+	margin: auto;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+	right: 0;
+	width: 190px;
+}
+
+.bt-audio .button {
+	background: url(../img/audio.png);
+	background-repeat: no-repeat;
+	width: 42px;
+	height: 42px;
+	border: none;
+	margin: 3px;
+	display: block;
+	float: left;
+}
+
+ 
+
+@media screen and (max-width: 320px) {
+	.bt-audio .button {
+		margin: 3px;
+		margin-bottom: -20px;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 360px) {
+	.bt-audio .button {
+		margin: 3px;
+		margin-bottom: -20px;
+	}
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+	.bt-audio .button {
+		margin: 3px;
+		margin-bottom: -20px;
+	}
+}
+
+.onair {
+	background: url(../img/onair.png);
+	background-repeat: no-repeat;
+	width: 146px;
+	height: 55px;
+	border: none;
+	display: block;
+	float: left;
+	margin-top: 0px;
+	margin-right: 8px;
+}
+
+.activo {
+	background-position: bottom !important;
+}
+
+.bt_pause {
+	background-position: -50px !important;
+	display: none;
+}
+
+.bt_spk {
+	background-position: -100px !important;
+}
+
+.bt_volup {
+	background-position: -200px !important;
+}
+
+.bt_voldo {
+	background-position: -150px !important;
+}
+
+.bt_play:hover {
+	opacity: 0.8;
+}
+
+.bt_pause:hover {
+	opacity: 0.8;
+}
+
+.bt_volup:hover {
+	opacity: 0.8;
+}
+
+.bt_voldo:hover {
+	opacity: 0.8;
+}
+
+.hidden {
+	display: none !important;
+}
+
+::selection {
+	background: rgba(0,0,0,0);
+}
+/*----------------------------------------------
+---- AUDIO -------------------------------------
+----------------------------------------------*/
+#footerfixed {
+	bottom: 0px;
+	margin: 0 auto !important;
+	text-align: center !important;
+	width: 100% !important;
+	height: 55px;
+	position: fixed;
+	left: 0px;
+}

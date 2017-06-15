@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="latin1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Cerro Catedral, Bariloche. #CatedralInvierno." />
+    <meta name="keywords" content="Cerro Catedral, Bariloche, ski, snowboard, nieve, grastronomia, servicios, travesia, montaña, medios de elevaciion, tarifas, parque de nieve, trineos, donas" />
+    <meta name="author" content="Catedral Alta Patagonia">
+
+    <title>Catedral Alta Patagonia</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/logo-nav.css" rel="stylesheet">
+    
+    
+    
+     <script charset="utf-8" type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!-- DO NOT MODIFY -->
+  
+<script type="text/javascript">
+
+    function gettempcum() {
+
+        //GUARDAMOS EN UNA VARIABLE EL RESULTADO DE LA CONSULTA AJAX    
+
+		var tempcum = $.ajax({
+
+            url: 'https://catedralios.000webhostapp.com/index_values.php', //indicamos la ruta donde se genera la hora
+                dataType: 'text',//indicamos que es de tipo texto plano
+                async: false     //ponemos el parámetro asyn a falso
+        }).responseText;
+
+        //actualizamos el div que nos mostrará la hora actual
+        document.getElementById("tempcum").innerHTML = tempcum;
+
+		
+		
+		 
+    }
+
+    //con esta funcion llamamos a la función getTimeAJAX cada segundo para actualizar el div que mostrará la hora
+   //setInterval(getTimeAJAX,1000);
+   window.onload=gettempcum;
+
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+</head>
+
+<body id="body_home">
+
+
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                
+                 <!-- Tabla header -->
+                <table width="100%" border="0">
+                            <tr>
+                                    <td width="8%"><a href="index.html"><img src="img/imgs/header_01.png" width="100%" height="auto" /></a>
+                                    </td>
+            
+                                 <td width="15%"><a href="index.html"><img src="img/imgs/header_02.png" width="100%" height="auto" /></a>
+                                    </td>
+            
+                                    <td width="32%"><a href="index.html"><img src="img/imgs/header_03.png" width="100%" height="auto" /></a>
+                                    </td>
+                                    
+                                    <td width="13%">
+                                    <a href="camara.html"><img src="img/imgs/header_04.png" width="100%" height="auto" /></a>
+                                    </td>
+                            		
+                                    <td width="15%"><a href="emergencia.html"><img src="img/imgs/header_05.png" width="100%" height="auto" /></a>
+		                            </td>
+                                    <td width="9%"> 
+                                    <img src="img/imgs/header_06.png" width="100%" height="auto" />
+                                    </td>
+                            </tr>                
+                  </table>
+                  <!-- FIN Tabla header -->
+
+                
+                
+            </div>
+            
+   
+        </div>
+        <!-- /.container -->
+        </nav>
+
+<div class="contenedor">
+           
+               
+              
+               <!-- Tabla Main Layout -->
+                <table width="100%" height="100%">
+                        
+                        <tr  height="14%" >
+                        
+                                <td colspan="3" width="50%"><a href="edomedios.html"><img src="images/imgs/home_02.png" width="100%" height="auto" /></a></td>
+                                <td colspan="3" width="50%"><a href="meteorologia.html"><img src="images/imgs/home_03.png" width="100%" height="auto" /></a></td>
+                             
+                        </tr>
+                        
+                        <tr  height="11%" ><td colspan="6" width="100%"><a href="https://skipasscatedral.com/es"><img src="images/imgs/home_04.png" width="100%" height="auto" /></a> 
+                        </td>
+                        
+                        </tr>
+                
+                        <tr  height="39%" ><td colspan="6" width="100%"><div id="tempcum" align="center"></div></td>
+                        
+                        </tr>
+                
+                        <tr  height="9%" >
+                          <td colspan="6" width="100%">
+                            <h1 align="center" class="h1_cate">ALTURA DE LA NIEVE</h1>
+                        
+                        </td>
+                        
+                        </tr>
+                  <tr  height="7%" >
+                    <td   colspan="1" width="16%" class="alt_nieve"><div align="center">-- cm</div></td ><td  colspan="1" width="16%"class="text_alt_nieve"> <div align="center">Base</div></td>
+                                <td width="16%"   colspan="1"  class="alt_nieve"><div align="center">5 cm</div></td> 
+
+                          <td width="16%" colspan="1"     class="text_alt_nieve"> <div align="center">1200</div></td>
+                                <td width="16%" colspan="1" nowrap="nowrap"   class="alt_nieve"><div align="center">15 cm</div></td><td width="16%"  colspan="1"    class="text_alt_nieve"><div align="center">Cumbre</div></td>
+                        
+                        </tr>
+                        
+                        <tr  height="10%" ><td colspan="6">
+                        
+                            <a href="skitracker.html"><img src="images/imgs/home_08.png" width="100%" height="auto" /> 
+                            </a></td>
+                		</tr>
+                        
+                		<tr  height="19%" >
+               
+                            <td colspan="2" width="33%">
+                              <a href="tarifas.html"><img src="images/imgs/home_09.png" width="100%" height="auto" /> 
+                            </a></td>
+                            <td colspan="2"width="33%">
+                              <a href="mapas.html"><img src="images/imgs/home_10.png" width="100%" height="auto" /> 
+                            </a></td>
+                            <td colspan="2" width="33%">
+                              <a href="webcams.html"><img src="images/imgs/home_11.png" width="100%" height="auto" /> 
+                            </a></td>
+                
+                		</tr>
+                </table>
+                <!-- FIN Main Layout -->
+                <table height="71px">
+                <tr><td></td>
+                </tr>
+                </table>
+                </div>
+               
+                
+     
+
+
+
+<footer align="center">
+        <table width="100%" border="0" >
+            <tr>
+                    <td width="16,66%"><a href="https://www.facebook.com/CatedralAltaPatagonia"><img src="img/btn_sociales_01.png" width="36" height="34" /></a></td>
+                    <td width="16,66%"><a href="https://twitter.com/CerroCatedralOK"><img src="img/btn_sociales_02.png" width="36" height="34" /></a></td>
+                    <td width="16,66%"><a href="http://www.youtube.com/user/CerroCatedralCAP"><img src="img/btn_sociales_03.png" width="36" height="34" /></a></td>
+                    <td width="16,66%"><a href="https://www.instagram.com/cerrocatedralok/"><img src="img/btn_sociales_04.png" width="36" height="34" /></a></td>
+                    <td width="16,66%"><a href="http://www.tripadvisor.com.ar/Attraction_Review-g312848-d317508-Reviews-Cerro_Catedral_Ski_Resort-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagonia.html"><img src="img/btn_sociales_05.png" width="36" height="34" /></a></td>
+                    <td width="16,66%"><a href="radio.html"><img src="img/btn_sociales_06.gif" width="36" height="34" /></a></td>
+            </tr>
+        
+        </table>
+</footer>
+
+
+
+
+
+</body>
+</html>
